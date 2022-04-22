@@ -74,7 +74,7 @@ shuffle($questions);
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Aassignet 7: Qustions List Show Randomly</title>
+    <title>class07</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -85,7 +85,7 @@ shuffle($questions);
   </head>
   <body>
     
-  <h2 class="mt-2 text-center"> Class-7 Assignment-1</h2>
+  <h2> Class07 Question 01</h2>
     <hr class="mb-3">
     <div class="container  my-1">
 
