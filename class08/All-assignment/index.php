@@ -82,8 +82,59 @@ echo gpa( 80, 50, 90)."<br>";
 echo gpa( 40, 30, 80)."<br>";
 
 ?>
+<h1>assignment04</h1>
+<?php
+    
+    function age_cal( $birdth_years ){
+   
+    $now_years = date('Y');
+   $age_cal = $now_years - $birdth_years;
+    return "Your Age " . $age_cal . " Years Old";
+}
+
+echo age_cal( 2003 );
+?>
+    
+    <h1>assignment05</h1>
+<?php
+    
+   function bmi( $kg, $height ) {
+    $bmiCal = $kg / ($height*$height);
+    $bmi = round( $bmiCal );
+
+    if ( $bmi <= 18.5 ) {
+        return "Your BMI " . $bmi ." Your Low Body ";
+    }elseif( $bmi > 18.5 && $bmi <= 25 ){
+        return "Your BMI " . $bmi . " All Right Your Body";
+    }elseif( $bmi > 25 && $bmi<= 30){
+        return  "Your BMI " . $bmi ." Please control Your Body";
+    }elseif( $bmi > 30.0 ){
+        return "Your BMI " . $bmi ." Your Body is Very Very Over Weight";
+    } 
+} 
+
+echo bmi( 52, 165);
+?>
+    
+       <h1>assignment06</h1>
+<?php
+    
+   function currencyConverter( $type, $amount ){
+ 
+    if ( $type == 'usd') {
+        return $amount*86;
+    }elseif( $type == 'pound' ){
+        return $amount*111;
+    }elseif( $type == 'euro' ){
+        return $amount*93;
+    }elseif( $type == 'cud' ){
+        return $amount*68;
+    }
+
+}
 
 
-
+echo currencyConverter( 'usd', 550 );
+?>
 </body>
 </html>
